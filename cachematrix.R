@@ -1,8 +1,10 @@
 ## Put comments here that give an overall description of what your
 ## functions do
+#caching inverse of a matrix
+#change the mean function and apply it to the matrix function
 
 ## Write a short comment describing this function
-
+#The function create matrix object and cache its inverse
 makeCacheMatrix <- function(x = matrix()) {
 inv<-NULLset<-function(y){
   x<<-y
@@ -20,6 +22,7 @@ inv<-NULLset<-function(y){
 
 ## Write a short comment describing this function
 
+#If the inverse already gotton, it would retrive the solution gotton above
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         inv <- x$getInverse()
